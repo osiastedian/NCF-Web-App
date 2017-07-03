@@ -23,7 +23,7 @@
         <li><a routerLink="sermons" >Sermons</a></li>
         <li><a routerLink="about">About</a></li>
         <li><a routerLink="contact">Contact</a></li>
-        <li><a routerLink="login">Login</a></li>
+        <li><a data-toggle="modal" data-target="#myModal">Login</a></li>
       </ul>
     </div>
   </div>
@@ -31,4 +31,5 @@
 
 <div class="container">
   <router-outlet></router-outlet>
+  <app-login></app-login>
 </div>
