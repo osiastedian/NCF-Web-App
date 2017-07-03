@@ -1,8 +1,10 @@
-<div class="navbar navbar-default ">
+<div class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
-      <a href="../" class="navbar-brand">{{title}}</a>
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+      <a routerLink="" class="navbar-brand">
+        <img id="logo-img" class="img navbar-brand-logo" src="assets/img/logo.png">        
+      </a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main" >
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -21,15 +23,43 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a routerLink="">Home</a></li>
         <li><a routerLink="sermons" >Sermons</a></li>
-        <li><a routerLink="about">About</a></li>
+        <li><a routerLink="about">About</a></li>        
         <li><a routerLink="contact">Contact</a></li>
-        <li><a data-toggle="modal" data-target="#myModal">Login</a></li>
+        <li><a routerLink="contact">Gallery</a></li>
+        <li><a routerLink="contact">Events</a></li>
+        <li><button class="btn btn-default" style="margin: 7px;" data-toggle="modal" data-target="#myModal">Login</button></li>
       </ul>
     </div>
   </div>
 </div>
 
-<div class="container">
+<div class="container-fluid">
   <router-outlet></router-outlet>
   <app-login></app-login>
+  <!-- Footer -->
+<div class="container">
+  <div class="footer">
+		<div class="col-md-6 col-xs-12 text-left">
+			<h3> Featured Quote </h3>
+			<blockquote class="blockquote">
+				<p class="mb-0">The biblical teaching of forgiveness and reconcilation is so radical that there are no cultures or societies that are in accord with it.</p>
+				<footer class="blockquote-footer">Pastor Roel Tabasa <cite title="Source Title">Forgivess and Reconcilation</cite></footer>
+			</blockquote>
+		</div>
+		<div id="footer-follow-subscribe" class="container col-md-6 col-xs-12 text-right ng-binding">
+			<h3 class="col-md-12 "> Follow and Subscribe: </h3>
+			
+			<ul class="list list-inline col-md-12 col-xs-12"> 
+				
+				<li><a id="facebook-link" href="https://www.facebook.com/ncfcebu/" class="fa fa-social fa-facebook"></a></li>
+				<li><a id="instagram-link" href="https://www.instagram.com/ncfcebu/" class="fa fa-social fa-instagram"></a></li>
+				<li><a id="twitter-link" href="https://twitter.com/ncfcebu" class="fa fa-social fa-twitter "></a></li>
+				<li><a id="youtube-link" href="https://www.youtube.com/user/ncfcebu" class="fa fa-social fa-youtube "></a></li>				
+				<li><a id="spotify-link" href="https://open.spotify.com/user/osiastedian/playlist/2G8gKulLRCsoqplqThrfya" class="fa fa-social fa-spotify"></a></li>
+			</ul>
+			<div class="col-md-12 footer-church-name"><a href="#" class="col-xs-12">Northview Christial Fellowship Church</a><span class="col-xs-12">All Rights Reserved.</span></div>
+		</div>
+	</div>
+  </div>		
 </div>
+

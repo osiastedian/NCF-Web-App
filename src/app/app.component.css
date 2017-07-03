@@ -1,0 +1,89 @@
+.navbar
+{
+    margin-bottom: 0px;
+}
+.navbar-brand>img {
+    display: inline;
+    height: inherit;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.navbar-brand {
+    padding: 5px 5px;
+}
+.footer 
+{
+    width: inherit;
+}
+
+/* Style all font awesome icons */
+.fa-social{
+    padding: 20px;
+    font-size: 30px;
+    width: 75px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-facebook:hover
+{
+  background: white;
+  color: #3B5998;
+  text-decoration: none;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-twitter:hover
+{
+    background: #fff;
+    color:#55ACEE;
+    text-decoration: none;
+}
+/* YouTube */
+.fa-youtube {
+    background: #cd201f;
+    color: white;
+}
+.fa-youtube:hover {
+    background: #cd201f;
+    color: black;
+    text-decoration: none;
+}
+/* Instagram */
+.fa-instagram {
+    background: #4c68d7;
+    color: white;
+}
+.fa-instagram:hover
+{
+    background:#bc2a8d;
+    color: white;
+    text-decoration: none;
+}
+
+/* Spotify */
+.fa-spotify {
+    background: #84bd00;
+    color: #000000;
+}
+.fa-spotify:hover
+{
+    background: #84bd00;
+    color: #fff;
+    text-decoration: none;
+}
