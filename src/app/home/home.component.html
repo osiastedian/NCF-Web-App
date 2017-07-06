@@ -1,46 +1,38 @@
-<div id="home" class="row parallax" style="background-image: url(assets/img/ncf_entrance_blur.jpg); padding: 40px 0px 25px 0px;">
-  <div class="col-md-12 text-center" style="padding: 0px 0px 75px 0px;">
-    <img class="img-responsive vertical-center 
-      col-md-6 col-md-offset-3 
-      col-sm-8 col-sm-offset-2
-      col-xs-10 col-xs-offset-1" src="assets/img/logo_bw_outerglow.png">;
-  </div>
+<div class="w3-display-container headerParralax parallax">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+        <h1 id="welcom-line" class="w3-mobile w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity ">Welcome to Northview Christian Fellowship</h1>
+    </div>
+    <!--<img class="w3-image w3-mobile w3-third w3-display-middle" src="assets/img/logo_bw_outerglow.png">-->
 </div>
-<div class="container">
-  <div id="intro">
-    <h2 class="section-header">
-      <b>Welcome to Northview Christian Fellowship.</b> 
-    </h2>
-    <p>
-      A church that loves God and makes disciples.
-      Mission: we take the <b style="font-family: 'Francois One', sans-serif;">W.I.D.E.R.</b> road
-    </p>
-    <div class="row">	
-      <ul class="list-group">
-        <li class="list-group-item">
-          <span class=" btn btn-default acronym-letter-btn">W</span>
-          <span class="">Win people to Christ</span>
-        </li>
-        <li class="list-group-item">
-          <span class=" btn btn-default acronym-letter-btn">I</span>
-          <span class="">Integrate new believers into the church life</span>
-        </li>
-        <li class="list-group-item">
-          <span class=" btn btn-default acronym-letter-btn">D</span>
-          <span class="">Develop church memebers to Christ-likeness</span>
-        </li>
-        <li class="list-group-item">
-          <span class=" btn btn-default acronym-letter-btn">E</span>
-          <span class="">Empower church leaders to serve</span>
-        </li>
-        <li class="list-group-item">
-          <span class=" btn btn-default acronym-letter-btn">R</span>
-          <span class="">Rejoice together in worship</span>
-        </li>
-      </ul>						
+<div class="w3-content">
+    <div id="intro">
+        <h2 class="w3-center">
+            <b>Welcome to Northview Christian Fellowship.</b>
+        </h2>
+        <div class="w3-row w3-padding">
+            <div class="w3-twothird">
+                <p class="w3-left">
+                    A church that loves God and makes disciples. Mission: we take the <b style="font-family: 'Francois One', sans-serif;">W.I.D.E.R.</b> road
+                </p>
+
+                <ul class="w3-ul w3-block">
+                    <li class="" *ngFor="let item of Mission">
+                        <b class="w3-quarter w3-center">{{item[0]}}</b>
+                        <span class="w3-rest">{{item}}</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-third ">
+                <p>
+                    <img class="img-responsive img-circle" src=""> Pastor Roel Tabasa
+                </p>
+                <p>
+                    <img class="img-responsive img-circle" src=""> Pastor Jay Manait
+                </p>
+            </div>
+        </div>
+        <div class="w3-center">
+            <button routerLink="about" id="btn-learn-more" class="w3-btn w3-red ncf-default-btn">Learn More</button>
+        </div>
     </div>
-    <div class="text-center">
-      <button routerLink="about" id="btn-learn-more" class="btn ncf-default-btn">Learn More</button>				
-    </div>
-  </div>
 </div>

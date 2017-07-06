@@ -1,7 +1,19 @@
 .parallax {
-    min-height: 300px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.headerParralax {
+    background-image: url("/assets/img/ncf_entrance_blur.jpg");
+    min-height: 100%;
+}
+
+.mission-list-item {
+    border: 0px solid;
+}
+
+#welcom-line {
+    background-color: rgba(255, 255, 255, 0.4);
 }

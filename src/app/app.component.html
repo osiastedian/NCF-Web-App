@@ -1,65 +1,62 @@
-<div class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <a routerLink="" class="navbar-brand">
-        <img id="logo-img" class="img navbar-brand-logo" src="assets/img/logo.png">        
-      </a>
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main" >
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="navbar-collapse collapse" id="navbar-main">
-      <ul class="nav navbar-nav">
-        <!--<li>
-          <img class="img-responsive" src="">
-        </li>
-        <li>
-          <a href="http://news.bootswatch.com">Blog</a>
-        </li> -->
-      </ul>
+<div [style.width.%]="loginSidebar.width" [style.display]="block" class="w3-sidebar w3-bar-block right-sidebar w3-animate-right">
+    <app-login></app-login>
+</div>
+<div class="w3-top">
+    <div class="w3-container w3-bar w3-white w3-padding w3-card-2 w3-white w3-opacity-min" style="letter-spacing:4px;">
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <span class="w3-bar-item">Northview Christian Fellowship</span>
+        <div class="w3-right ">
+            <a class="w3-bar-item w3-button w3-hide-small w3-hide-medium" routerLink="">Home</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-hide-medium" routerLink="sermons">Sermons</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-hide-medium" routerLink="about">About</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-hide-medium" routerLink="contact">Gallery</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-hide-medium" routerLink="contact">Events</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Login</a>
+            <div class="w3-center w3-bar-item w3-button w3-hide-large " onclick="w3_open()">☰</div>
+        </div>
+        <div id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+            <a class="w3-bar-item w3-button w3-mobile" routerLink="sermons">Sermons</a>
+            <a class="w3-bar-item w3-button w3-mobile" routerLink="about">About</a>
+            <a class="w3-bar-item w3-button w3-mobile" routerLink="contact">Gallery</a>
+            <a class="w3-bar-item w3-button w3-mobile" routerLink="contact">Events</a>
+            <a class="w3-bar-item w3-button w3-mobile">Login</a>
+        </div>
 
-      <ul class="nav navbar-nav navbar-right">
-        <li><a routerLink="">Home</a></li>
-        <li><a routerLink="sermons" >Sermons</a></li>
-        <li><a routerLink="about">About</a></li>        
-        <li><a routerLink="contact">Contact</a></li>
-        <li><a routerLink="contact">Gallery</a></li>
-        <li><a routerLink="contact">Events</a></li>
-        <li><button class="btn btn-default" style="margin: 7px;" data-toggle="modal" data-target="#myModal">Login</button></li>
-      </ul>
     </div>
-  </div>
 </div>
 
-<div class="container-fluid">
-  <router-outlet></router-outlet>
-  <app-login></app-login>
-  <!-- Footer -->
+<router-outlet></router-outlet>
 <div class="container">
-  <div class="footer">
-		<div class="col-md-6 col-xs-12 text-left">
-			<h3> Featured Quote </h3>
-			<blockquote class="blockquote">
-				<p class="mb-0">The biblical teaching of forgiveness and reconcilation is so radical that there are no cultures or societies that are in accord with it.</p>
-				<footer class="blockquote-footer">Pastor Roel Tabasa <cite title="Source Title">Forgivess and Reconcilation</cite></footer>
-			</blockquote>
-		</div>
-		<div id="footer-follow-subscribe" class="container col-md-6 col-xs-12 text-right ng-binding">
-			<h3 class="col-md-12 "> Follow and Subscribe: </h3>
-			
-			<ul class="list list-inline col-md-12 col-xs-12"> 
-				
-				<li><a id="facebook-link" href="https://www.facebook.com/ncfcebu/" class="fa fa-social fa-facebook"></a></li>
-				<li><a id="instagram-link" href="https://www.instagram.com/ncfcebu/" class="fa fa-social fa-instagram"></a></li>
-				<li><a id="twitter-link" href="https://twitter.com/ncfcebu" class="fa fa-social fa-twitter "></a></li>
-				<li><a id="youtube-link" href="https://www.youtube.com/user/ncfcebu" class="fa fa-social fa-youtube "></a></li>				
-				<li><a id="spotify-link" href="https://open.spotify.com/user/osiastedian/playlist/2G8gKulLRCsoqplqThrfya" class="fa fa-social fa-spotify"></a></li>
-			</ul>
-			<div class="col-md-12 footer-church-name"><a href="#" class="col-xs-12">Northview Christial Fellowship Church</a><span class="col-xs-12">All Rights Reserved.</span></div>
-		</div>
-	</div>
-  </div>		
-</div>
+    <div class="footer">
+        <div class="col-md-6 col-xs-12 text-left">
+            <h3> Featured Quote </h3>
+            <blockquote class="blockquote">
+                <p class="mb-0">The biblical teaching of forgiveness and reconcilation is so radical that there are no cultures or societies that are in accord with it.</p>
+                <footer class="blockquote-footer">Pastor Roel Tabasa <cite title="Source Title">Forgivess and Reconcilation</cite></footer>
+            </blockquote>
+        </div>
+        <div id="footer-follow-subscribe" class="container col-md-6 col-xs-12 text-right ng-binding">
+            <h3 class="col-md-12 "> Follow and Subscribe: </h3>
 
+            <ul class="list list-inline col-md-12 col-xs-12">
+
+                <li>
+                    <a id="facebook-link" href="https://www.facebook.com/ncfcebu/" class="fa fa-social fa-facebook"></a>
+                </li>
+                <li>
+                    <a id="instagram-link" href="https://www.instagram.com/ncfcebu/" class="fa fa-social fa-instagram"></a>
+                </li>
+                <li>
+                    <a id="twitter-link" href="https://twitter.com/ncfcebu" class="fa fa-social fa-twitter "></a>
+                </li>
+                <li>
+                    <a id="youtube-link" href="https://www.youtube.com/user/ncfcebu" class="fa fa-social fa-youtube "></a>
+                </li>
+                <li>
+                    <a id="spotify-link" href="https://open.spotify.com/user/osiastedian/playlist/2G8gKulLRCsoqplqThrfya" class="fa fa-social fa-spotify"></a>
+                </li>
+            </ul>
+            <div class="col-md-12 footer-church-name"><a href="#" class="col-xs-12">Northview Christial Fellowship Church</a><span class="col-xs-12">All Rights Reserved.</span></div>
+        </div>
+    </div>
+</div>

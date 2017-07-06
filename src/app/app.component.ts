@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , ViewChild, AfterViewInit , ElementRef, } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Northview Christian Fellowship';  
+  public mainContent = 
+  {
+    marginRight : 0,    
+  };
+  public loginSidebar = 
+  {
+    display: "block",
+    width: 0
+  };
+  
+  
+  title = 'Northview Christian Fellowship';
+  toggled = false;
+  private _toggleLogin()
+  {
+    this.toggled = !this.toggled;
+  }
 }

@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { SermonsComponent } from './sermons/sermons.component';
 import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
@@ -14,12 +13,11 @@ import { HomeComponent } from './home/home.component';
     SermonsComponent,
     LoginComponent,
     AboutComponent,
-    ContactComponent,
     HomeComponent
   ],
   imports: [
     BrowserModule,
-    routes
+    routes,    
   ],
   providers: [],
   bootstrap: [AppComponent]
