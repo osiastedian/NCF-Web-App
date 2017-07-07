@@ -1,9 +1,11 @@
 .mission-list-item {
     border: 0px solid;
 }
-.welcome-text{
-    margin: 15% 0% 35% 0%;
+
+.welcome-text {
+    margin: 20% 0% 35% 0%;
 }
+
 .background-transparent-white {
     background-color: rgba(255, 255, 255, 0.4);
 }
@@ -11,34 +13,27 @@
 .background-transparent-white-60 {
     background-color: rgba(255, 255, 255, 0.6);
 }
+
 .background-transparent-white-60:hover {
     background-color: rgba(255, 255, 255, 1);
 }
 
-.section 
-{
-    padding: 3% 3%;    
+.section {
+    padding: 3% 3%;
 }
 
-.pastor-img
-{
+.pastor-img {
     max-height: 267px;
 }
 
-@media (min-width: 993px)
-{
-.w3-col.off-l2 
-{
+.w3-col.off-2 {
     margin-left: 16.666%;
 }
 
-.w3-col.off-l1-5 
-{
+.w3-col.off-1-5 {
     margin-left: 12.121212%;
 }
 
-.w3-col.off-l1 
-{
+.w3-col.off-1 {
     margin-left: 8.8888%;
-}
 }

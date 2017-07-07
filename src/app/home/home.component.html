@@ -1,49 +1,47 @@
+<div class="w3-animate-zoom welcome-text">
+    <h1 class="w3-mobile w3-center w3-padding-large w3-xlarge w3-wide background-transparent-white">Welcome to Northview Christian Fellowship</h1>
+</div>
 
-    <div class="w3-animate-zoom welcome-text">
-        <h1 class="w3-mobile w3-center w3-padding-large w3-xlarge w3-wide background-transparent-white">Welcome to Northview Christian Fellowship</h1>
-    </div>
-
-    <div class=" w3-animate-bottom w3-content w3-container w3-card background-transparent-white section">
+<div class=" w3-animate-bottom w3-content w3-container w3-card background-transparent-white section">
     <h2 class="w3-center">
         <span class="">About Northview Christian Fellowship Church</span>
     </h2>
     <div class="w3-container">
-        
-            <p class="w3-row w3-center w3-container">
-                A church that loves God and makes disciples. 
-            </p>
-            <p class="w3-row w3-container">
-                Mission: we take the <b style="font-family: 'Francois One', sans-serif;">W.I.D.E.R.</b> road.
-            </p>
+
+        <p class="w3-row w3-center w3-container">
+            A church that loves God and makes disciples.
+        </p>
+        <p class="w3-row w3-container">
+            Mission: we take the <b style="font-family: 'Francois One', sans-serif;">W.I.D.E.R.</b> road.
+        </p>
+        <div class="w3-row">
+            <ul class="w3-container w3-ul">
+                <li class="background-transparent-white-60" *ngFor="let item of Mission">
+                    <span class="">{{item}}</span>
+                </li>
+            </ul>
+        </div>
+        <div class="w3-row w3-padding">
+            <h1 class="w3-center"> Pastors </h1>
             <div class="w3-row">
-                <ul class="w3-container w3-ul">
-                    <li class="background-transparent-white-60" *ngFor="let item of Mission">
-                        <span class="">{{item}}</span>
-                    </li>
-                </ul>                
-            </div>
-            <div class="w3-row w3-padding">
-                <h1 class="w3-center"> Pastors </h1>
-                <div class="w3-row">
-                    <div class="w3-col l4 off-l1-5">
-                        <img class="w3-circle pastor-img" src="/assets/img/pastor_roel.PNG" alt="Person" style="width:100%">
-                        <div class="w3-container w3-center ">
-                            <h4><b>Rev. Pstr. Roel Tabasa</b></h4>    
-                            <p>Senior Pastor</p>    
-                        </div>
+                <div class="w3-col l4 m4 off-1-5">
+                    <img class="w3-circle pastor-img" src="/assets/img/pastor_roel.PNG" alt="Person" style="width:100%">
+                    <div class="w3-container w3-center ">
+                        <h4><b>Rev. Pstr. Roel Tabasa</b></h4>
+                        <p>Senior Pastor</p>
                     </div>
-                    <div class="w3-col l4 off-l1 ">
-                        <img class="w3-circle pastor-img" src="/assets/img/pastor_jay.PNG" alt="Person" style="width:100%">
-                        <div class="w3-container w3-center ">
-                            <h4><b>Pastor Jay Manait</b></h4>    
-                            <p>Community Pastor</p>    
-                        </div>
+                </div>
+                <div class="w3-col l4 m4 off-1 ">
+                    <img class="w3-circle pastor-img" src="/assets/img/pastor_jay.PNG" alt="Person" style="width:100%">
+                    <div class="w3-container w3-center ">
+                        <h4><b>Pastor Jay Manait</b></h4>
+                        <p>Community Pastor</p>
                     </div>
                 </div>
             </div>
-        </div>        
-        <div class="w3-center">
-        <button routerLink="about" id="btn-learn-more" class="w3-btn background-transparent-white-60">Learn More</button>
-        
+        </div>
     </div>
+    <div class="w3-center">
+        <button routerLink="about" id="btn-learn-more" class="w3-btn background-transparent-white-60">Learn More</button>
 
+    </div>

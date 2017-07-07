@@ -1,3 +1,39 @@
-<p>
-  sermons works!
-</p>
+<div class=" w3-animate-bottom w3-content w3-container w3-card background-transparent-white section">
+    <h1 class="w3-center">
+        Sermons
+    </h1>
+    <div class="w3-row">
+        <video id="my-video" class="video-js sermon-video" controls preload="auto" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+          <source src="MY_VIDEO.mp4" type='video/mp4'>
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a web browser that
+            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+          </p>
+        </video>
+    </div>
+
+    <div class="w3-container">
+        <h2> List: </h2>
+        <ul class="w3-ul">
+            <li class="background-transparent-white w3-card-1" *ngFor="let sermon of sermonList">
+                <div class="w3-row">
+                    <div class="w3-left-align w3-col l11 m11 s11">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i> {{sermon}}
+                    </div>
+                    <div class="w3-right-align w3-col l1 m1 s1">
+                        55:41
+                    </div>
+                </div>
+                <div class="w3-row">
+                    <h5 class="w3-left-align w3-col l10 m9 s8"> <i>Pastor Jay</i></h5>
+                    <h5 class="w3-right-align w3-col l2 m3 s2">March 23, 2017</h5>
+                </div>
+            </li>
+        </ul>
+        <div class="w3-row w3-container w3-padding">
+            <i class="fa fa-fast-backward fa-2 w3-left-align w3-third" aria-hidden="true"></i>
+            <span class="w3-center w3-third fa-1-5">1 - 20 of 100</span>
+            <i class="fa fa-fast-forward fa-2 w3-right-align w3-third" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>

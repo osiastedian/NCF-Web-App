@@ -8,7 +8,7 @@
 .headerParralax {
     background-image: url("/assets/img/ncf_entrance_blur.jpg");
     min-height: 100%;
-    padding: 10% 0% 0% 0%;
+    padding: 5% 0% 0% 0%;
 }
 
 .background-transparent-white {
@@ -18,14 +18,14 @@
 .background-transparent-white-60 {
     background-color: rgba(255, 255, 255, 0.6);
 }
+
 .background-transparent-white-60:hover {
     background-color: rgba(255, 255, 255, 1);
 }
 
-.footer 
-{
+.footer {
     padding: 1% 3%;
-    margin: 3% 0% 0% 0%;    
+    margin: 3% 0% 0% 0%;
 }
 
 .right-sidebar {
